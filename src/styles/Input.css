@@ -1,0 +1,59 @@
+.input{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    align-items: center;
+}
+
+input{
+    background-color: #D6E1FF;
+}
+.add-input{
+    height: 50px;
+    width: 180px;
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+}
+
+.modif-input{
+    height: 30px;
+    width: 120px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+select{
+    height: 30px;
+    width: 180px;
+    border-radius: 5px;
+    border: none; 
+    text-align: center;  
+    background-color: #D6E1FF;
+}
+
+.btn-submit{
+    background-color: #9EB1FF;
+    border-radius: 50%;
+    border: none;
+    height: 50px;
+    width: 50px;
+}
+
+button:hover{
+    background-color: #D6E1FF;
+}
+
+.table{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 600px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 5px;
+    background-color: #182449;
+}
+
+

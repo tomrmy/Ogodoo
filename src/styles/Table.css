@@ -1,0 +1,75 @@
+.tableaux{
+    text-align: center;
+    display: block;
+    justify-content: center;
+    border-radius: 6px;
+    margin: auto;
+    width: 600px;
+    align-items: center;
+}
+
+tr{
+    padding: 20px;
+    text-align: center;
+}
+
+th{
+    padding: 10px;
+    text-align: center;
+}
+
+
+.nom{
+    width: 300px;
+}
+
+.save-btn{
+    border-radius: 50%;
+    border: none;
+    height: 40px;
+    width: 40px;
+    background-color: #9EB1FF;
+}
+.description{
+    width: 400px;
+}
+
+.statut{
+    width: 100px;
+}
+
+.prio{
+    width: 200px;
+}
+
+.action{
+    width: 100px;
+}
+
+.suppr{
+    background-color: #CE2C31;
+    border-radius: 50%;
+    border: none;
+    height: 40px;
+    width: 40px;
+}
+.suppr:hover{
+    background-color: #E5484D;
+}
+
+.modif{
+    background-color: #9EB1FF;
+    border-radius: 50%;
+    border: none;
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+}
+
+.nb-prio{
+    border-radius: 10px;
+}
+
+.save-btn{
+    text-align: center;
+}
