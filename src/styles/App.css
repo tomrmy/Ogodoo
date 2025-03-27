@@ -1,4 +1,28 @@
 body{
     background-color:#141726 ;
-    color: #9EB1FF;
+    color: #4CCCE6;
+}
+
+.btn{
+    background-color: #4CCCE6;
+    border-radius: 50%;
+    border: none;
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+}
+
+.nav-date{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    position: sticky;
+    min-width: 200px;
+}
+.date-container{
+    min-width: 200px;
+}
+.main-title{
+    font-size: 50px;
 }

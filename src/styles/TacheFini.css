@@ -1,0 +1,28 @@
+.tableaux{
+    text-align: center;
+    display: block;
+    justify-content: center;
+    border-radius: 6px;
+    width: 600px;
+    align-items: center;
+
+}
+
+tr{
+    padding: 20px;
+    text-align: center;
+}
+
+th{
+    padding: 10px;
+    text-align: center;
+    color: #4CCCE6;
+}
+
+.nom{
+    width: 100px;
+}
+
+.date-limite{
+    width: 100px;
+}

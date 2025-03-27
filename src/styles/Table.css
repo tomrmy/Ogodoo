@@ -16,11 +16,15 @@ tr{
 th{
     padding: 10px;
     text-align: center;
+    color: #4CCCE6;
 }
 
+.date-limite{
+    width: 300px;
+}
 
 .nom{
-    width: 300px;
+    width: 100px;
 }
 
 .save-btn{
@@ -28,10 +32,11 @@ th{
     border: none;
     height: 40px;
     width: 40px;
-    background-color: #9EB1FF;
+    background-color: #4CCCE6;
 }
-.description{
-    width: 400px;
+
+.save-btn:hover{
+    background-color: #23AFD0;
 }
 
 .statut{
@@ -43,27 +48,40 @@ th{
 }
 
 .action{
-    width: 100px;
+    width: 300px;
 }
+
 
 .suppr{
     background-color: #CE2C31;
     border-radius: 50%;
     border: none;
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
 }
 .suppr:hover{
     background-color: #E5484D;
 }
 
 .modif{
-    background-color: #9EB1FF;
+    background-color: #4CCCE6;
     border-radius: 50%;
     border: none;
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     margin: 5px;
+}
+
+.valid{
+    background-color: #3DD68C;
+    border-radius: 50%;
+    border: none;
+    height: 30px;
+    width: 30px;
+}
+
+.modif:hover{
+    background-color: #23AFD0;
 }
 
 .nb-prio{
@@ -72,4 +90,6 @@ th{
 
 .save-btn{
     text-align: center;
+    height: 30px;
+    width: 30px;
 }

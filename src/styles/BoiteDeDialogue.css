@@ -1,0 +1,47 @@
+.boite-dialogue-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .boite-dialogue {
+    background-color: #082C36;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .boite-dialogue h2 {
+    margin-bottom: 10px;
+  }
+  
+  .boite-dialogue p {
+    margin-bottom: 20px;
+  }
+  
+  .boite-dialogue-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .btn-annuler {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .btn-confirmer {
+    background-color: #4CAF50;
+    color: white;
+  }
+  

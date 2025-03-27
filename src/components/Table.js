@@ -3,15 +3,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import { faTrash } from '@fortawesome/free-solid-svg-icons'
 import { faPencil} from '@fortawesome/free-solid-svg-icons'
-import { faXmark} from '@fortawesome/free-solid-svg-icons'
 import { faClock} from '@fortawesome/free-solid-svg-icons'
 
 
-function Table({ taches, suppr, edit, savetaches, editIndex}) {
+function Table({ taches, suppr, edit, savetaches, editIndex, validerTache}) {
 
     if (!Array.isArray(taches)) {
         return;
     }
+    else{
+        
+    }
+
+    if (taches)
 
     return (
         <table className='tableaux'>
@@ -20,6 +24,7 @@ function Table({ taches, suppr, edit, savetaches, editIndex}) {
                     <th className='nom'>Nom</th>
                     <th className='prio'>Priorité</th>
                     <th className='statut'>Statut</th>
+                    <th className='date-limite'>Date Limite</th>
                     <th className='action'>Actions</th>
                 </tr>
             </thead>
@@ -40,11 +45,10 @@ function Table({ taches, suppr, edit, savetaches, editIndex}) {
                                     </select>
                                 </td>
                                 <td className='statut'>
-                                    <select className="modif-input" defaultValue={tache.statut} id={`statut-${index}`}>
-                                        <option value="Terminer"><FontAwesomeIcon icon={faCheck} />Terminer</option>
-                                        <option value="En cours"><FontAwesomeIcon icon={faClock} />En cours</option>
-                                        <option value="Abandon"><FontAwesomeIcon icon={faXmark} />Abandon</option>
-                                    </select>
+                                        <FontAwesomeIcon icon={faClock} />
+                                </td>
+                                <td className='date-limite'>
+                                    <input className="modif-input" type="date" defaultValue={tache.dateLimite} id={`dateLimite-${index}`} />
                                 </td>
                                 <td className='btn-modif'>
                                     <button 
@@ -53,8 +57,7 @@ function Table({ taches, suppr, edit, savetaches, editIndex}) {
                                                 index,
                                             document.getElementById(`titre-${index}`).value,
                                             document.getElementById(`prio-${index}`).value,
-                                            document.getElementById(`statut-${index}`).value
-                                            
+                                            document.getElementById(`dateLimite-${index}`).value
                                         )}
                                     >
                                         <FontAwesomeIcon icon={faCheck} />
@@ -67,7 +70,11 @@ function Table({ taches, suppr, edit, savetaches, editIndex}) {
                                 <td>{tache.titre}</td>
                                 <td>{tache.prio}</td>
                                 <td><FontAwesomeIcon icon={faClock} /></td>
+                                <td>{tache.dateLimite}</td>
                                 <td className="btn-modif">
+                                    <button className="valid"  onClick={() => validerTache(index)}>
+                                        <FontAwesomeIcon icon={faCheck} />
+                                    </button>
                                     <button className="modif" onClick={() => edit(index)}>
                                         <FontAwesomeIcon icon={faPencil} />
                                     </button>

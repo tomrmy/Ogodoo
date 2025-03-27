@@ -3,10 +3,11 @@
     justify-content: center;
     gap:10px;
     align-items: center;
+    padding-top:40px ;
 }
 
 input{
-    background-color: #D6E1FF;
+    background-color: #B6ECF7;
 }
 .add-input{
     height: 50px;
@@ -14,6 +15,25 @@ input{
     border-radius: 15px;
     border: none;
     text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+.add-btn{
+    border-radius: 50%;
+    border: none;
+    height: 40px;
+    width: 40px;
+    background-color: #4CCCE6;
+    margin-left: 15px;
+}
+
+.add-task{
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .modif-input{
@@ -30,30 +50,36 @@ select{
     border-radius: 5px;
     border: none; 
     text-align: center;  
-    background-color: #D6E1FF;
+    background-color: #B6ECF7;
 }
 
 .btn-submit{
-    background-color: #9EB1FF;
-    border-radius: 50%;
+    background-color: #0BD8B6;
+    border-radius: 15px;
     border: none;
     height: 50px;
-    width: 50px;
+    width: 80px;
 }
 
-button:hover{
-    background-color: #D6E1FF;
+.btn-submit:hover{
+    background-color: #0EB39E;
 }
 
 .table{
     align-items: center;
     justify-content: center;
     display: flex;
-    width: 600px;
+    width: 800px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 20px;
     border-radius: 5px;
-    background-color: #182449;
+    background-color: #082C36;
 }
 
+.table-fini{
+    width: 500px;
+    border-radius: 5px;
+    margin: auto;
+    background-color: #082C36;
+}
 
