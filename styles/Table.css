@@ -1,0 +1,95 @@
+.tableaux {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 5px;
+    border-collapse: collapse;
+    background-color: #1D2936;
+    color: #4CCCE6;
+}
+
+.table-fini{
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 5px;
+    border-collapse: collapse;
+
+    color: #4CCCE6;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    text-align: center;
+    border-radius: 10px;
+}
+
+tbody tr:hover {
+    background-color: #2C3E50;
+}
+
+.nom, .prio, .statut, .action {
+    width: 20%;
+    text-align: center;
+}
+
+.nom-fini, .prio-fini, .statut-fini{
+    width: 300px;
+}
+
+
+
+button {
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+
+.save-btn {
+    background-color: #3DD68C;
+}
+
+.save-btn:hover {
+    background-color: #2C9F6B;
+}
+
+.modif {
+    background-color: #4CCCE6;
+}
+
+.modif:hover {
+    background-color: #23AFD0;
+}
+
+.suppr {
+    background-color: #CE2C31;
+}
+
+.suppr:hover {
+    background-color: #E5484D;
+}
+
+.valid{
+    background-color: #3DD68C;
+}
+
+.valid:hover {
+    background-color: #2C9F6B;
+}
+
+@media screen and (max-width: 768px) {
+    .tableaux {
+        font-size: 0.8rem;
+    }
+    th, td {
+        padding: 8px;
+    }
+    .nom, .prio, .statut, .date-limite, .action {
+        width: 20%;
+    }
+}
